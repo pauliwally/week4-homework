@@ -47,3 +47,6 @@ end
 gem "quiet_assets", group: "development"
 gem "starter_generators", group: "development"
 gem "better_errors", group: "development"
+
+# Use Hirb to view table in Terminal, rather than a long list in an array.
+gem 'hirb'

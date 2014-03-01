@@ -11,6 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+
+ActiveRecord::Schema.define(version: 20140226193925) do
+
+#  NEED TO MAKE A TABLE OF BRANDS WITH CATEGORY, NOT COMPANY
+  create_table "companies", force: true do |t|
+    t.string   "company_name"
+    t.string   "category"
+    t.string   "image_url"
+    t.integer  "herovotes"
+    t.integer  "villanvotes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
